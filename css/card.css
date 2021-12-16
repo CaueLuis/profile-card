@@ -1,0 +1,148 @@
+@import url("../reset.css");
+
+@media (max-width: 1080px) {
+  html {
+    font-size: 93.75%;
+  }
+}
+
+@media (max-width: 720px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media (max-width: 420px) {
+  .card-box {
+    width: 18.75rem !important;
+  }
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Kumbh Sans";
+  margin: 0;
+  padding: 0;
+  background-color: #87ceeb;
+}
+
+#container {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+
+  position: relative;
+}
+
+#container::after {
+  content: "";
+  width: calc(100vw / 2);
+  height: calc(100vw / 2);
+  background-color: hsl(185, 75%, 39%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 0px 0px 95%;
+  opacity: 0.2;
+}
+
+#container::before {
+  content: "";
+  width: calc(100vw / 2);
+  height: calc(100vw / 2);
+  background-color: hsl(185, 75%, 39%);
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  border-radius: 95% 0px 0px;
+  opacity: 0.2;
+}
+
+.card-box {
+  border-radius: 0.9375rem;
+  box-shadow: 0.4375rem 0.4375rem 0.8125rem 0px rgba(50, 50, 50, 0.22);
+  height: 25rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: all 0.3s ease-out;
+  z-index: 10;
+  background-color: white;
+}
+
+.header {
+  width: 100%;
+  height: 40%;
+  background-image: url(../css/bg-pattern-card.svg);
+  background-size: cover;
+  border-radius: 0.9375rem 0.9375rem 0px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-city {
+  font-family: "Kumbh Sans";
+  color: hsl(0, 0%, 59%);
+  text-align: center;
+  font-weight: 500;
+  font-size: 0.875rem;
+
+  position: relative;
+}
+
+.avatar {
+  width: 6.25rem;
+  margin-bottom: -10.3125rem;
+  height: 6.25rem;
+  border: 0.5rem;
+  border-radius: 50%;
+  background-color: grey;
+  box-shadow: 0 0.375rem 0.75rem #ccc;
+  background-image: url(../css/image-victor.jpg);
+}
+
+.name {
+  margin-top: 1.25rem;
+  display: flex;
+  padding-top: 2.1875rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.name p {
+  margin-left: 0.5rem;
+  margin-top: 0.15rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 400;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Kumbh Sans", "Helvetica Neue", Helvetica, Arial;
+  font-weight: 700;
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  box-shadow: 0px -0.25rem 0.25rem -0.25rem rgba(0, 0, 0, 0.2);
+  justify-content: space-around;
+  padding: 1.25rem 0;
+  font-size: 0.9rem;
+}
+
+.info-container h2 {
+  margin-bottom: 0.5rem;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
